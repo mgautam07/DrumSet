@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DrumSet</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+</head>
+<body>
+        <div class="keys">
+                <div class="keyButton" id="w">W</div>
+                <div class="keyButton" id="a">A</div>
+                <div class="keyButton" id="s">S</div>
+                <div class="keyButton" id="d">D</div>
+                <div class="keyButton" id="j">J</div>
+                <div class="keyButton" id="k">K</div>
+                <div class="keyButton" id="key5">SPACE</div>
+        </div>
+        <div class="b-image">
+                <img class="bg" src="images/drums1.jpg" alt="drums">
+        </div>
+
+
+        <div class="container box">
+                <span></span>
+                Press the record button to start RECORDING.
+                <br>
+                <button class="btn-grad1" id="record" onclick="record()">RECORD!</button>
+                <button class="btn-grad1 hide"id="stopRecord" onclick="stop_record()">STOP RECORDING!</button>
+                <button class="btn-grad1 hide"id="clearRecord" onclick="clear_record()">CLEAR RECORDING!</button>
+                <p>Set intervals between each stroke. (ms)</p>
+                <input type="text" id="delay" value="500">
+                <i class="fas fa-record-vinyl"></i>
+                <button class="btn-grad1" id="stopRecord" onclick="play()">Play</button>
+        </div>
+</body>
+</html>
